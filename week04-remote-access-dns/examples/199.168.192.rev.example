@@ -1,0 +1,11 @@
+; 학습용 예제. 실제 서버의 파일을 그대로 복사한 것은 아님.
+$TTL 1H
+@ IN SOA ns.lab.test. admin.lab.test. (
+    2026102701 ; Serial
+    1H         ; Refresh
+    15M        ; Retry
+    1W         ; Expire
+    1H         ; Negative cache TTL
+)
+@   IN NS  ns.lab.test.
+132 IN PTR web.lab.test.
